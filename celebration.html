@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter 💌</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8c6cc;
+            font-family: 'Cursive', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .letter-container {
+            background: #fff5f5;
+            padding: 20px;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: center;
+        }
+
+        .love-letter {
+            font-size: 20px;
+            color: #d6336c;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #d6336c;
+            width: 0;
+            margin: 0 auto;
+            animation: typing 5s steps(50) forwards;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .heart {
+            color: red;
+            font-size: 25px;
+            position: absolute;
+        }
+
+        .heart1 { top: 10px; left: 20px; }
+        .heart2 { top: 10px; right: 20px; }
+        .heart3 { bottom: 10px; left: 50px; }
+        .heart4 { bottom: 10px; right: 50px; }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <span class="heart heart1">❤️</span>
+        <span class="heart heart2">❤️</span>
+        <p class="love-letter">My love, from the moment I met you, my world changed forever... 💖</p>
+        <span class="heart heart3">❤️</span>
+        <span class="heart heart4">❤️</span>
+    </div>
+</body>
+</html>
